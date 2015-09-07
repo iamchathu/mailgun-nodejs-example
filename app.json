@@ -1,0 +1,7 @@
+{
+  "name": "Mailgun Example",
+  "description": "Mailgun Nodejs Example Project",
+  "repository": "https://github.com/iamchathu/mailgun-nodejs-example",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "nodejs","mailgun","email"]
+}

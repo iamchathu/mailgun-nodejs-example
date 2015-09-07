@@ -1,0 +1,25 @@
+{
+  "name": "mailgun-example",
+  "version": "1.0.0",
+  "description": "Mailgun Nodejs Example Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamchathu/mailgun-nodejs-example"
+  },
+  "keywords": [
+    "nodejs",
+    "mailgun",
+    "email"
+  ],
+  "author": "Chathu Vishwajith",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mailgun-js": "^0.7.1"
+  }
+}
