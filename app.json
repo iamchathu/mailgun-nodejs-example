@@ -2,6 +2,6 @@
   "name": "Mailgun Example",
   "description": "Mailgun Nodejs Example Project",
   "repository": "https://github.com/iamchathu/mailgun-nodejs-example",
-  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "logo": "http://blog.mailgun.com/content/images/2014/Jul/Mailgun_Icon.png",
   "keywords": ["node", "express", "nodejs","mailgun","email"]
 }
