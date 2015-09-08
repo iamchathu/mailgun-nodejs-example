@@ -112,7 +112,7 @@ app.get('/invoice/:mail', function(req,res){
         });
 })
 
-
-app.listen(3030,function(){
-      console.log('%s: Node server started on %d...', Date(Date.now()),3030);
+var port = process.env.PORT || 3030;
+app.listen(port,function(){
+      console.log('%s: Node server started on %d...', Date(Date.now()),port);
 });
