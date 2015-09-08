@@ -3,16 +3,8 @@ var express = require('express');
 var Mailgun = require('mailgun-js');
 //init express
 var app = express();
-
-
-//Your api key, from Mailgun’s Control Panel
-var api_key = 'MAILGUN-API-KEY';
-
-//Your domain, from the Mailgun Control Panel
-var domain = 'YOUR-DOMAIN.com';
-
-//Your sending email address
-var from_who = 'your@email.com';
+//load mail gun apikey, domain and fromwho
+var mailgunConfig = require('./config/mailgun');
 
 //Tell express to fetch files from the /js directory
 app.use(express.static(__dirname + '/js'));
@@ -40,11 +32,11 @@ app.get('/', function(req, res) {
 app.get('/submit/:mail', function(req,res) {
 
     //We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
-    var mailgun = new Mailgun({apiKey: api_key, domain: domain});
+    var mailgun = new Mailgun({apiKey: mailgunConfig.api_key, domain: mailgunConfig.domain});
 
     var data = {
     //Specify email data
-      from: from_who,
+      from: mailgunConfig.from_who,
     //The email to contact
       to: req.params.mail,
     //Subject and text data  
@@ -71,7 +63,7 @@ app.get('/submit/:mail', function(req,res) {
 });
 
 app.get('/validate/:mail', function(req,res) {
-    var mailgun = new Mailgun({apiKey: api_key, domain: domain});
+    var mailgun = new Mailgun({apiKey: mailgunConfig.api_key, domain: mailgunConfig.domain});
 
     var members = [
       {
@@ -97,10 +89,10 @@ app.get('/invoice/:mail', function(req,res){
     var path = require("path");
     var fp = path.join(__dirname, 'invoice.txt');
     //Settings
-    var mailgun = new Mailgun({apiKey: api_key, domain: domain});
+    var mailgun = new Mailgun({apiKey: mailgunConfig.api_key, domain: mailgunConfig.domain});
 
     var data = {
-      from: from_who,
+      from: mailgunConfig.from_who,
       to: req.params.mail,
       subject: 'An invoice from your friendly hackers',
       text: 'A fake invoice should be attached, it is just an empty text file after all',
