@@ -4,6 +4,7 @@
   "description": "Mailgun Nodejs Example Project",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,15 +14,18 @@
   "keywords": [
     "nodejs",
     "mailgun",
-    "email"
+    "email",
+    "mailgun-js"
   ],
   "author": "Chathu Vishwajith",
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.3",
-    "gulp": "^3.9.0",
-    "gulp-nodemon": "^2.0.4",
     "jade": "^1.11.0",
     "mailgun-js": "^0.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4"
   }
 }

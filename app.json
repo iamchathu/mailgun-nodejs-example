@@ -5,6 +5,7 @@
   "logo": "http://blog.mailgun.com/content/images/2014/Jul/Mailgun_Icon.png",
   "keywords": ["node", "express", "nodejs","mailgun","email"],
   "env": {
+    "NODE_ENV" : "production",
     "API_KEY": "your_mailgun_api",
     "DOMAIN" : "yourdomain.me",
     "FROM_WHO" : "you@yourname.me"
