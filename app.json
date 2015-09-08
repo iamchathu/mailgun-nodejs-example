@@ -3,5 +3,10 @@
   "description": "Mailgun Nodejs Example Project",
   "repository": "https://github.com/iamchathu/mailgun-nodejs-example",
   "logo": "http://blog.mailgun.com/content/images/2014/Jul/Mailgun_Icon.png",
-  "keywords": ["node", "express", "nodejs","mailgun","email"]
+  "keywords": ["node", "express", "nodejs","mailgun","email"],
+  "env": {
+    "API_KEY": "your_mailgun_api",
+    "DOMAIN" : "yourdomain.me",
+    "FROM_WHO" : "you@yourname.me"
+  },
 }
