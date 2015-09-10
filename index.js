@@ -113,7 +113,7 @@ app.get('/invoice/:mail', function(req,res){
 })
 
 var port = process.env.PORT || 3030;
-var host = process.env.HOST || '127.0.0.1';
-app.listen(port,host,function(){
-      console.log('%s: Node server started on %s : %d...', Date(Date.now()),host,port);
+var ip = process.env.IP || '127.0.0.1';
+app.listen(port,ip,function(){
+      console.log('%s: Node server started on %s : %d...', Date(Date.now()),ip,port);
 });

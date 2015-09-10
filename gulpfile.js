@@ -7,7 +7,7 @@ gulp.task('serve',function(){
 		ext:'js',
 		env:{
 			PORT : 3030,
-			HOST : '127.0.0.1',
+			IP : '127.0.0.1',
 			API_KEY : "your_mailgun_api",
 			DOMAIN : "yourdomain.me",
 			FROM_WHO : "you@yourname.me"
