@@ -26,7 +26,7 @@ Made with :sparkling_heart: [Chathu Vishwajith](http://chathu.me)
 
 
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/wombat-ucd/Real-Estate/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/iamchathu/mailgun-nodejs-example/master/LICENSE)
 
 
 
