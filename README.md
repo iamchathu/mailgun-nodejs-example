@@ -20,6 +20,12 @@ Or click below Deply to heroku button and give the mailgun email and domain and 
 Created using mailgun blog article
 [How to send transactional email in a NodeJS app using the Mailgun API](http://blog.mailgun.com/how-to-send-transactional-emails-in-a-nodejs-app-using-the-mailgun-api/)
 
+
+
+Made with :sparkling_heart: [Chathu Vishwajith](http://chathu.me)
+
+
+
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/wombat-ucd/Real-Estate/master/LICENSE)
 
 
