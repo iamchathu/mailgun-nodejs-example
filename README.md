@@ -1,4 +1,6 @@
 # mailgun-nodejs-example
+[![Build Status](https://travis-ci.org/iamchathu/mailgun-nodejs-example.svg?branch=master)](https://travis-ci.org/iamchathu/mailgun-nodejs-example)
+
 Mailgun Nodejs Example Project
 
 To run locally clone this repo
